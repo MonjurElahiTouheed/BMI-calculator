@@ -10,6 +10,7 @@ body{
     align-items: center;
     height: 100vh;
     font-family: "Prompt", sans-serif;
+    animation: bodyColor 5s ease-in-out infinite;
 
     /* width: 100vw; */
 }
@@ -23,14 +24,17 @@ body{
     padding: 22px 55px;
     margin: auto;
     box-shadow: 1px 1px 1px black;
+    animation: cal 2s linear infinite;
 }
 
 input {
     border-radius: 10px;
     padding-top: 15px;
-    padding: 15px 30px 15px 15px;
+    padding: 15px 0px 15px 45px;
     margin-left: 5px;
     border: 1px solid beige;
+    font-family: "Prompt", sans-serif;
+    font-size: 16px;
 }
 input:focus {
     /* border-color: beige; */
@@ -43,8 +47,19 @@ input:focus {
 
 .weight-machine {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 120px;
+    transform: translateY(-50%);
+}
+.height {
+    position: relative;
+}
+
+.height__machine {
+    position: absolute;
+    top: 50%;
+    left: 120px;
+    transform: translateY(-50%);
 }
 
 .height {
@@ -84,4 +99,50 @@ svg{
     top: -10px;
     left: 0;
     transition: ease-in-out 0.5s;
+}
+
+
+
+@keyframes cal {
+    0% {
+       transform: scale(1.02);
+    }
+    25% {
+        transform: scale(1.05);
+        
+    }
+    50% {
+        transform: scale(1.07);
+        
+    }
+    75% {
+        transform: scale(1.05);
+        
+    }
+    100% {
+        transform: scale(1.02);
+        
+    }
+}
+
+@keyframes bodyColor {
+    0% {
+        background-color: rgba(179, 215, 141, 0.15);
+    }
+    25% {
+        background-color: rgba(127, 203, 138, 0.15);
+        
+    }
+    50% {
+        background-color: rgba(247, 188, 116, 0.15)
+        
+    }
+    75% {
+        background-color: rgba(255, 173, 58, 0.15);
+        
+    }
+    100% {
+        background-color: rgba(245, 130, 42, 0.15);
+        
+    }
 }
