@@ -19,30 +19,35 @@ calculate.addEventListener('click', () => {
       bmi.style.color = '#442D15';
        bmi.textContent = bmi.innerHTML + " Underweight";
        indicator.setAttribute('fill', '#B4D88E');
+       indicator.style.left = '30px';
     }
     else if(result < 24.9){
        bmiStatus.style.backgroundColor = '#86CB94';
        bmi.style.color = '#442D15';
        indicator.setAttribute('fill', '#86CB94');
        bmi.textContent = bmi.innerHTML + " Normal"
+       indicator.style.left = '113px';
     }
     else if(result < 29.9){
         bmiStatus.style.backgroundColor = '#FDBE74';
         bmi.style.color = '#442D15';
        bmi.textContent = bmi.innerHTML + " Overweight";
        indicator.setAttribute('fill', '#FDBE74');
+       indicator.style.left = '190px';
     }
     else if(result < 39.9){
         bmiStatus.style.backgroundColor = '#FCAE39';
         bmi.style.color = '#442D15';
        bmi.textContent = bmi.innerHTML + " Obese";
        indicator.setAttribute('fill', '#FCAE39');
+       indicator.style.left = '268px';
     }
     else {
         bmiStatus.style.backgroundColor = '#F5812A';
         bmi.style.color = '#442D15';
        bmi.textContent = bmi.innerHTML + " Severly Obese";
        indicator.setAttribute('fill', '#F5812A');
+       indicator.style.left = '355px';
     }
 
     weight = '';
