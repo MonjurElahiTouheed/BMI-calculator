@@ -52,5 +52,23 @@ button {
 }
 
 .index {
-    margin-top: 30px;
+    /* margin-top: 20px; */
+}
+
+.bmi__status {
+    margin-top: 40px;
+}
+
+.bmi {
+   font-weight: 700;
+}
+
+.bmi__chart{
+    position: relative;
+}
+
+svg{
+    position: absolute;
+    top: -10px;
+    left: 0;
 }
