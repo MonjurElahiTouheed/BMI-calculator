@@ -24,6 +24,10 @@ body{
     padding: 22px 55px;
     margin: auto;
     box-shadow: 1px 1px 1px black;
+    
+}
+
+.main__anim {
     animation: cal 2s linear infinite;
 }
 
